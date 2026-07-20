@@ -1,0 +1,26 @@
+# Runtime data (never committed, always local)
+/models/
+/output/
+/temp/
+/backend/data/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Env
+.env
+.env.local
+
+# OS
+.DS_Store

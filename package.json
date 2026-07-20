@@ -1,0 +1,13 @@
+{
+  "name": "instagram-transcriber",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n web,api -c blue,green \"pnpm --filter web dev\" \"uv run --project backend uvicorn backend.api.app:app --reload --port 8000\"",
+    "build": "pnpm --filter web build",
+    "setup": "bash scripts/setup.sh",
+    "lint": "pnpm --filter web lint"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
